@@ -28,4 +28,8 @@ int main( int argc, char *argv[] )  {
        printf("Environment variable not defined\n");
    else
        printf("Environment variable %s has value %s\n",argv[1],envvar);
+
+   // Where are environment variable values located? Above the stack
+   // printf("Pointer to the environment variable value: %p\n", XX);
+   // What variable goes in XX above? envvar or &envvar?
 }
