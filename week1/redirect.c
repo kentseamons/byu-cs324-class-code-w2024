@@ -11,9 +11,9 @@
 //   ./redirect 2> outfile
 //   ./redirect  > outfile 2>&1
 //   ./redirect 2> outfile 1>&2
-//   ./redirect &> outfile
+//   ./redirect &> outfile - redirect both stderr and stdout to the file, shorthand for prior command
 
-// The ordering changes when both stdout and stderr are redirected to a file
+// The ordering changes when both stdout and stderr are redirected to a file, stdout is bufferred
 // Use stdbuf -o0 <command> to force unbuffered
 
 
